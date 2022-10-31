@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Location of water dispensers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+          rel="stylesheet">
+    <!--Schriftart, unter google fonts kopiert und eingefügt-->
+
+</head>
+<body>
+
+<div class="index-container">
+    <!--form-tag ist  ein container für verschiedene Input Elemente-->
+    <div class="login-container">
+        <form>
+            <h1>Login Screen</h1>
+            <h3>Login:</h3>
+
+            <div class="txt-field-container">
+                <label>Username:</label>
+                <input type="text"> <br>
+                <label>Password:</label>
+                <input type="password"><br>
+            </div>
+            <div class="button-container">
+                <input type="submit" value="LOGIN">
+            </div>
+        </form>
+
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <div class="main-container">
+        <h1>Main Screen</h1>
+        <div>
+            <h3>Wilkommen Admina!</h3>
+
+            Hier werden die Standorte der Wasserspender in ganz Berlin angezeigt und ob sie im Betrieb sind.<br>
+            <div class="button-container">
+                <input type="submit" value="Ausloggen">
+            </div>
+        </div>
+        <div class="maps-Container">
+            <div class="text-container">
+                <h3>Tempelhof 12051 </h3>
+                <h3>Britzer-Garten 12349 </h3>
+                <h3>Keuzberg 10967 </h3>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d78328.40722477954!2d13.433056412435995!3d52.463656856384596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1swasserspender!5e0!3m2!1sde!2sde!4v1667151523398!5m2!1sde!2sde"
+                    width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <div class="button-container">
+            <input type="submit" value="Neue Station hinzufügen">
+        </div>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <div class="add-container">
+        <h1>Add-Screen</h1>
+        <div class="add-form-container">
+            <form method="post">
+                <div class="txt-field-container">
+                    <label>Name</label>
+                    <input type="text"><br>
+                    <label>ID</label>
+                    <input type="text"><br>
+                    <label>Standort</label>
+                    <input type="text"><br>
+                    <label>Straße</label>
+                    <input type="text"><br>
+                    <label>PLZ</label>
+                    <input type="text"><br>
+                    <label>Stadt</label>
+                    <input type="text"><br>
+                    <label>Breitengrad</label>
+                    <input type="text"><br>
+                    <label>Längengrad</label>
+                    <input type="text"><br>
+                </div>
+            </form>
+        </div>
+        <div class="button-container">
+            <input type="submit" value="save">
+            <input type="submit" value="delete">
+            <input type="submit" value="cancel">
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="updateDelete-container">
+        <h1>Update/Delete-Screen</h1>
+
+        <div class="updateDelete-form-container">
+            <form method="get">
+                <div class="txt-field-container">
+                    <label>Name</label>
+                    <input type="text" value="Wasserspender Britzer-Garten"><br>
+                    <label>ID</label>
+                    <input type="text" value="99999"><br>
+                    <label>Beschreibung</label>
+                    <input type="text" value="Wasserspender im Britzer Garten"><br>
+                    <label>Straße</label>
+                    <input type="text" value="Sangerhauser Weg 8"><br>
+                    <label>PLZ</label>
+                    <input type="text" value="12349"><br>
+                    <label>Stadt</label>
+                    <input type="text" value="Berlin"><br>
+                    <label>Breitengrad</label>
+                    <input type="text" value="52.43232461255503"><br>
+                    <label>Längengrad</label>
+                    <input type="text" value="13.410865285771667"><br>
+                    <div>
+            </form>
+        </div>
+
+        <div class="button-container">
+            <input type="submit" value="update">
+            <input type="submit" value="delete">
+            <input type="submit" value="cancel">
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

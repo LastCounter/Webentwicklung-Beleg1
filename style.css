@@ -1,0 +1,48 @@
+body{
+    /**Randbedingungen bestimmen, bei 0 ausgefüllt**/
+    margin: 30%;
+    /*padding 0 heißt ObenUntenRechtsLinks abstand zu den Elementen*/
+    padding: 30%;
+    /**teilt die seite in farben**/
+    background: linear-gradient(120deg,#00aeff,#d3f3ff);
+}
+
+
+.index-container{
+    /*sage das er die Schriftart benutzen soll von google*/
+    font-family: 'Nunito', sans-serif;
+    /**Hintergrund**/
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.maps-Container{
+    display: compact;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #ff805c;
+}
+
+.add-button-container{
+    border-radius: 18px ;
+}
+
+.maps-Container{
+    /*Elemente werden neben einander dargestellt mit display:flex*/
+    display: flex;
+    /*Freiraum dazwischen dargestellt mit justify..*/
+    justify-content: space-between;
+    /*Abstand zum Container darüber*/
+    margin-top: 16px;
+
+}
+/*Der text Container soll 20% des Bildschirms haben und die Map dies restlichen*/
+.text-container{
+    width: 20%;
+}
